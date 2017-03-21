@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="18dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="18dp"
+        android:background="#000000"
+        tools:context="jp.techacademy.akito.shimbo.autoslideshowapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/playbackButton" />
+
+    <Button
+        android:id="@+id/playbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="再生" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="進む"
+        android:layout_alignBaseline="@+id/playbackButton"
+        android:layout_alignBottom="@+id/playbackButton"
+        android:layout_toEndOf="@+id/playbackButton"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/playbackButton"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/playbackButton"
+        android:text="戻る" />
+
+    </RelativeLayout>
